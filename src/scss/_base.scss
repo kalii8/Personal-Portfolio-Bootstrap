@@ -1,0 +1,59 @@
+
+body {
+    height: 200vh;
+}
+
+.jumbotron {
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    min-height: 70vh;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bolder;
+    border-radius: 0;
+}
+
+.greeting {
+    color: white;
+    font-size: 250%;
+    text-align: right; 
+}
+
+.bigbold {
+    font-size: 200%;
+    font-weight: bold; 
+}
+
+.whoiam {
+    font-size: 150%;
+    color: white;
+    text-align: right; 
+}
+.info {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 10vh;
+}
+
+.process {
+    padding: 2rem;
+}
+
+$bg-color: #E5DDF4;
+.card {
+    background-color: $bg-color;
+    border: none;
+}
+
+.skill {
+    padding: 0.5rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+  

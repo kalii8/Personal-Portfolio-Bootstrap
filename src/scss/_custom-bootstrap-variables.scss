@@ -140,8 +140,9 @@
     // Body
     //
     // Settings for the `<body>` element.
-
-    // $body-bg:                   $white !global;
+        
+    $bg-color: #E5DDF4;
+        $body-bg:                   $bg-color !global;
     // $body-color:                $gray-900 !global;
 
     // Links
@@ -149,7 +150,7 @@
     // Style anchor elements.
 
     // $link-color:                theme-color("primary") !global;
-    $link-decoration: underline;
+    $link-decoration: none;
     $link-decoration: $link-decoration !global;
     // $link-hover-color:          darken($link-color, 15%) !global;
     // $link-hover-decoration:     underline !global;
@@ -562,6 +563,7 @@
     // $navbar-toggler-font-size:          $font-size-lg !global;
     // $navbar-toggler-border-radius:      $btn-border-radius !global;
 
+    
     // $navbar-dark-color:                 rgba($white,.5) !global;
     // $navbar-dark-hover-color:           rgba($white,.75) !global;
     // $navbar-dark-active-color:          $white !global;
@@ -569,6 +571,7 @@
     // $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !global;
     // $navbar-dark-toggler-border-color:  rgba($white,.1) !global;
 
+        
     // $navbar-light-color:                rgba($black,.5) !global;
     // $navbar-light-hover-color:          rgba($black,.7) !global;
     // $navbar-light-active-color:         rgba($black,.9) !global;
@@ -606,14 +609,14 @@
 
     // Jumbotron
 
-    // $jumbotron-padding:                 2rem !global;
+     $jumbotron-padding:                 0 !global;
     // $jumbotron-bg:                      $gray-200 !global;
 
 
     // Cards
 
-    // $card-spacer-y:                     .75rem !global;
-    // $card-spacer-x:                     1.25rem !global;
+     $card-spacer-y:                     1rem !global;
+    $card-spacer-x:                     2rem !global;
     // $card-border-width:                 $border-width !global;
     // $card-border-radius:                $border-radius !global;
     // $card-border-color:                 rgba($black,.125) !global;
