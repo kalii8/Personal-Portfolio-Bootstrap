@@ -1,59 +1,207 @@
-
+@import "variables.scss";
 body {
-    height: 200vh;
+    font-family: 'Assistant', sans-serif;
+}
+//Customized navbar
+.my-navbar {
+    background-color: $bg-color;
+    a{
+        color: $dark-violet;
+        
+    }
+      ul {
+        width: 70%;
+    }
+    a > img {
+        width: 50px;
+    }
 }
 
+a:hover{
+    color: $root-color;
+}
+
+li:hover {
+    background-color: $light-violet;
+}
+
+//Section headings
+h2 {
+    color: $light-text;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0;
+ }
+
+//Jumbotron + greeting texts
 .jumbotron {
     background-image: url("/img/hero.jpg");
     background-size: cover;
     min-height: 70vh;
     font-family: 'Archivo Black', sans-serif;
     font-weight: bolder;
-    border-radius: 0;
+    border-radius: 10px 10px 0 0;
 }
 
-.greeting {
-    color: white;
-    font-size: 250%;
-    text-align: right; 
-}
+ .greeting {
+     color: $light-text;
+     font-size: 250%;
+ }
+ 
+ @media  only screen and (max-width: 992px){
+     .greeting {
+        font-size: 150%;
+     }
+ }
 
-.bigbold {
-    font-size: 200%;
-    font-weight: bold; 
-}
+ .bigbold {
+     font-size: 200%;
+     font-weight: bolder; 
+ }
 
-.whoiam {
-    font-size: 150%;
-    color: white;
-    text-align: right; 
-}
+ //Small paragraph after picture, bg color blending in
 .info {
-    background-color: black;
-    color: white;
-    text-align: center;
+    background-color: $root-color;
+    color: $light-text;
     height: 10vh;
 }
-
-.process {
-    padding: 2rem;
+//Tree roots
+.roots {
+    background-image: url("/img/root.png");
+    background-size: contain;
+    height: 50px;
+}
+//Customizing process description cards
+.process-card {
+    color: $dark-violet;
+    background-color: $light-violet;
+}
+//Skills section with progress bars
+.skills {
+    background-color: $dark-violet;
 }
 
-$bg-color: #E5DDF4;
-.card {
-    background-color: $bg-color;
-    border: none;
-}
-
-.skill {
-    padding: 0.5rem;
+.skillbarpage {
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.8rem;
 }
 
-.bold {
-    font-weight: bold;
+@media  only screen and (max-width: 768px){
+    .skillbarpage {
+        width: 100%;
+       
+    }
 }
+//Progress bar
+//Container for progress bar
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px; 
+}
+//Label in front
+.skill {
+    background-color: $root-color;
+    width: 100px;
+    color: $light-text;
+    text-align: center;
+    padding: 0;
+ }
+ //Percentage 
+  .bar {
+    background-color: $light-violet;
+    text-align: right;
+    height: 100%; }
+//bar basis
+.progress {
+    background-color: $light-text;
+    flex-grow: 1;
+    text-align: right;
+    border-radius:  0px 25px 25px 0;
+    color: $dark-violet;
+    height: 100%;
+ }
 
+ //Percentage for each skill
+ .HTMLbar {
+    width: 80%; }
   
+  .cssbar {
+    width: 75%; }
+  
+  .jsbar {
+    width: 79%; }
+  
+  .reactbar {
+    width: 90%; }
+  
+  .jqbar {
+    width: 70%; }
+  
+  .phpbar {
+    width: 85%; }
+  
+  .larbar {
+    width: 90%; }
+  
+  .uxbar {
+    width: 95%; }
+
+//Customizing portfolio cards
+.portfolio-card-body {
+    background-color: $bg-color;
+    color: $dark-violet;
+   
+}
+
+.portfolio-card {
+    :hover {
+        background-color: $light-violet;
+        transition: 500ms;
+    }
+}
+
+//About Me
+.about {
+    background-color: $light-violet;
+    color: $dark-violet;
+}
+
+.profile-picture{
+    opacity: 0.7;
+}
+
+//Find Me
+
+.findme{
+    background-color: $dark-violet;
+}
+
+.icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1000%;
+}
+
+//Contact form
+
+input[type=text], input[type=tel], input[type=email]{
+    background-color: $bg-color;
+}
+
+//Footer
+.stripe {
+    width: 30%;
+    height: 20px;
+    background-color: #460e56;
+}     
+
+.footertext {
+    font-size: 300%;
+    text-transform: uppercase;
+    color: $dark-violet;
+}
+      

@@ -1,225 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Assistant:400,800" rel="stylesheet">
   <title>Liva's Personal portfolio</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div class="container">
-      <nav class="navbar navbar-expand-sm  mb-3 navbar-light" >
-          <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">About Me</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-  
-
-        <div class="jumbotron img-responsive container">
-            <div class="greeting">Hi, I am <span class="bigbold">Liva.</span></div>
-            <div class="whoiam">I'm a Full-Stack Web devopler <br>
-                                with a passion for perfection.
-            </div>
+  <!-- Navigation + logo -->
+    <nav class="navbar navbar-expand-md sticky-top my-navbar pt-0">
+      <div class="container ">
+        <a class="navbar-brand" href="">
+          <img src="/img/logo.png" alt="" class="img-fluid navbar-brand">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto flex-row justify-content-between text-center">
+            <li class="nav-item h-100 w-100">
+              <a class="nav-link text-uppercase" href="#home">Home</a>
+            </li>
+            <li class="nav-item h-100 w-100">
+              <a class="nav-link text-uppercase" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item h-100 w-100">
+              <a class="nav-link text-uppercase" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item h-100 w-100">
+              <a class="nav-link text-uppercase" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item h-100 w-100">
+              <a class="nav-link text-uppercase" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="info">
-            <p>I make your <strong>dream and vision </strong> into fully functional <strong>website</strong> .</p>
-        </div>
-        
-        <div class="process">
-
-        <div class="row">
-            <div class="col-md-3">
-              <div class="card text-justify">
+      </div>
+    </nav>
+    <div class="container">
+    <!-- Jumbotron + greeting texts -->
+    <div class="greeting jumbotron img-responsive container text-center text-md-right font-weight-bold pr-md-5" id="home">
+        Hi, I am <span class="bigbold">Liva.</span> <br /> I'm a Full-Stack Web devopler
+        <br> with a passion for perfection.
+    </div>
+    <!-- Small paragraph after picture, bg color blending in-->
+    <div class="info text-center">
+        I make your<span class="font-weight-bold"> dream and vision</span> into fully functional<span class="font-weight-bold"> website</span> .
+    </div>
+    <!-- Displaying growing roots -->
+    <div class="roots"></div>
+    <!--Main content, taking 10 cols -->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <!-- Process section with descriptive cards -->
+        <div class="process py-3">
+          <!--Cols for process description cards, 2 breakpoints -->
+          <div class="row">
+            <div class="col-lg-3 col-md-6 p-1">
+              <div class="card text-justify border-0 process-card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Imagine</h5>
-                  <p class="card-text">Let's talk about your idea and we will decide on the best way to make  it come true.</p>
+                  <h5 class="card-title text-center font-weight-bold">Imagine</h5>
+                  <p class="card-text">Let's talk about your idea and we will decide on the best way to make it come true.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card text-justify">
+            <div class="col-lg-3 col-md-6 p-1">
+              <div class="card text-justify border-0 process-card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Design</h5>
+                  <h5 class="card-title text-center font-weight-bold">Design</h5>
                   <p class="card-text">We desing mockup and agree together on how to create the best experience for your users.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-                <div class="card text-justify">
-                  <div class="card-body">
-                    <h5 class="card-title">Deploy</h5>
-                    <p class="card-text">I develp your product and we communicate intensly. Your feedback is incorporated.</p>
-                  </div>
+            <div class="col-lg-3 col-md-6 p-1">
+              <div class="card text-justify border-0 process-card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-center font-weight-bold">Deploy</h5>
+                  <p class="card-text">I develop your product and we communicate intensly. Your feedback is incorporated.</p>
                 </div>
               </div>
-              <div class="col-md-3">
-                  <div class="card text-justify">
-                    <div class="card-body">
-                      <h5 class="card-title">Launch</h5>
-                      <p class="card-text">We deploy your product and now your website is ready to launch.</p>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-lg-3 col-md-6 p-1">
+              <div class="card text-justify border-0 process-card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-center font-weight-bold">Launch</h5>
+                  <p class="card-text">We deploy your product and now your website is ready to launch.</p>
                 </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="skills">
+        <!-- Skills section with progress bars -->
+        <div class="skills py-3" id="skills">
           <h2>My Skills</h2>
-            <div class="skill">
-          
-          HTML
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:95%">
-                  <span class="sr-only">95% Complete</span>
-                </div>
+          <div class="skillbarpage mx-auto">
+            <div class="flex-container">
+              <div class="skill">HTML</div>
+              <div class="progress">
+                <div class="bar HTMLbar">80%</div>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="skill">CSS, Sass</div>
+              <div class="progress">
+                <div class="bar cssbar">75%</div>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="skill">JavaScript</div>
+              <div class="progress">
+                <div class="bar jsbar">79%</div>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="skill">React</div>
+              <div class="progress">
+                <div class="bar reactbar">90%</div>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="skill">JQuery</div>
+              <div class="progress">
+                <div class="bar jqbar">70%</div>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="skill">PHP</div>
+              <div class="progress">
+                <div class="bar phpbar">85%</div>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="skill">Laravel</div>
+              <div class="progress">
+                <div class="bar larbar">90%</div>
+              </div>
+            </div>
+
+            <div class="flex-container">
+              <div class="skill">UX</div>
+              <div class="progress">
+                <div class="bar uxbar">95%</div>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            CSS, Saas
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                  <span class="sr-only">80% Complete</span>
+        </div>
+        <!-- Portfolio cards in cols -->
+        <div class="portfolio py-3" id="portfolio">
+          <h2>Portfolio</h2>
+          <div class="row">
+            <div class="col-md-4 mb-2 portfolio-card">
+              <div class="card text-justify h-100 border-0 ">
+                <img class="card-img-top p-2" src="/img/hero.jpg" alt="Card image cap">
+                <div class="card-body portfolio-card-body mx-2 mb-2">
+                  <p class="card-text">Let's talk about your idea and we will decide on the best 
+                    way to make it come true. <br /> <span class="font-weight-bold">Tech sack:</span></p>
                 </div>
+              </div>
             </div>
-            </div>
-            
-            <div class="skill">
-            Javascript
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                  <span class="sr-only">70% Complete</span>
+            <div class="col-md-4 mb-2 portfolio-card">
+              <div class="card text-justify h-100 border-0 ">
+                <img class="card-img-top p-2" src="/img/hero.jpg" alt="Card image cap">
+                <div class="card-body portfolio-card-body mx-2 mb-2">
+                  <p class="card-text">We desing mockup and agree together on how to create the 
+                    best experience for your users. <br /> <span class="font-weight-bold">Tech sack:</span></p>
                 </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2 portfolio-card">
+              <div class="card text-justify h-100 border-0">
+                <img class="card-img-top p-2" src="/img/hero.jpg" alt="Card image cap">
+                <div class="card-body portfolio-card-body mx-2 mb-2">
+                  <p class="card-text">I develp your product and we communicate intensly. Your
+                     feedback is incorporated.<br /> <span class="font-weight-bold">Tech sack:</span></p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            React
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                  <span class="sr-only">80% Complete</span>
+          <div class="row">
+            <div class="col-md-4 mb-2 portfolio-card">
+              <div class="card text-justify h-100 border-0">
+                <img class="card-img-top p-2" src="/img/hero.jpg" alt="Card image cap">
+                <div class="card-body portfolio-card-body mx-2 mb-2">
+                  <p class="card-text">Let's talk about your idea and we will decide on the best 
+                    way to make it come true.<br /> <span class="font-weight-bold">Tech sack:</span></p>
                 </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2 portfolio-card">
+              <div class="card text-justify h-100 border-0">
+                <img class="card-img-top p-2" src="/img/hero.jpg" alt="Card image cap">
+                <div class="card-body portfolio-card-body mx-2 mb-2">
+                  <p class="card-text">We desing mockup and agree together on how to create the best
+                     experience for your users.<br /> <span class="font-weight-bold">Tech sack:</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2 portfolio-card">
+              <div class="card text-justify h-100 border-0">
+                <img class="card-img-top p-2" src="/img/hero.jpg" alt="Card image cap">
+                <div class="card-body portfolio-card-body mx-2 mb-2">
+                  <p class="card-text">I develp your product and we communicate intensly. Your feedback 
+                    is incorporated.</p>
+                  <a href="#" class="btn btn-dark w-100">Explore</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            PHP
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                  <span class="sr-only">90% Complete</span>
+        </div>
+        <!-- About me section -->
+        <div class="about py-3" id="aboutme">
+          <h2>About me</h2>
+              <div class="row">
+                <div class="col-lg-4 p-5">
+                  <img src="/img/profile.png" alt="Liva's profile picture" class="img-responsive w-75 d-block mx-auto profile-picture">
                 </div>
+                <div class="col-lg-8 px-5 text-center">
+                    <p class="w-75 mx-auto">
+                        My name is <span class="font-weight-bold">Liva</span> . I am a <span class="font-weight-bold">full stack web developer</span> with passion for details and perfection.
+                        <br /> <br /> For frontend I choose <span class="font-weight-bold">JavaScript</span> and <span class="font-weight-bold">React</span>, and for backend of my projects <span class="font-weight-bold">PHP</span> and <span class="font-weight-bold">Laravel</span>.
+                        <br /> <br /> I have long experience in <span class="font-weight-bold">Customer Support</span> before starting my developer carrier which helps me to <span class="font-weight-bold">empathize</span>
+                        client needs. <br /><br />
+                        <br /> <span class="font-weight-bold">Click below if you are looking for me.</span>
+                    </p>
+                  
+                      <button type="button" class="btn btn-light w-50">Contact me</button>
+                </div>
+              </div>
+        </div>
+        <!-- Find me icons -->
+        <div class="findme py-3">
+          <h2>Find me</h2>
+            <div class="icons">
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-github-square"></i>
+              <i class="fab fa-whatsapp-square"></i>
+            </div>
+        </div>
+        <!-- Contact form -->
+        <div class="contactform py-3" id="contact">
+          <h2>Contact me</h2>
+          <div class="row w-75 mx-auto">
+            <div class="col-md-6">
+              <div class="form-group ">
+                <input id="form_name" type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Please enter your firstname *" required="required"
+                  data-error="Firstname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input id="form_lastname" type="text" name="surname" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Please enter your lastname *" required="required"
+                  data-error="Lastname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            Laravel
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                  <span class="sr-only">85% Complete</span>
-                </div>
+          <div class="row w-75 mx-auto">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input id="form_email" type="email" name="email" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Please enter your email *" required="required"
+                  data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input id="form_phone" type="tel" name="phone" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Please enter your phone">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
+          <div class="row w-75 mx-auto">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="message" class="form-control border-0" placeholder="Message for me *" rows="4" required="required"
+                  data-error="Please,leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input type="submit" class="btn btn-dark btn-send w-100" value="Send message">
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
       </div>
-       <div class="portfolio">
-         <h2>Portfolio</h2>
-          <div class="row">
-              <div class="col-md-4">
-                <div class="card text-justify">
-                    <img class="card-img-top" src="/img/hero.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Let's talk about your idea and we will decide on the best way to make  it come true.</p>
-                    <p class="bold">Tech sack:</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card text-justify">
-                    <img class="card-img-top" src="/img/hero.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">We desing mockup and agree together on how to create the best experience for your users.</p>
-                    <p class="bold">Tech sack:</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="card text-justify">
-                      <img class="card-img-top" src="/img/hero.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">I develp your product and we communicate intensly. Your feedback is incorporated.</p>
-                      <p class="bold">Tech sack:</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                  <div class="card text-justify">
-                      <img class="card-img-top" src="/img/hero.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Let's talk about your idea and we will decide on the best way to make  it come true.</p>
-                      <p class="bold">Tech sack:</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card text-justify">
-                      <img class="card-img-top" src="/img/hero.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">We desing mockup and agree together on how to create the best experience for your users.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-justify">
-                        <img class="card-img-top" src="/img/hero.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">I develp your product and we communicate intensly. Your feedback is incorporated.</p>
-                        <a href="#" class="btn btn-primary">Explore</a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-       </div>
-
-       <div class="about">
-         <h2>About me</h2>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col">My name is Liva. I am a full stack web developer with passion for details and perfection. For frontend I choose JavaScript and React, and for backend of my projects PHP and Laravel.
-
-                I have long experience in Customer Support before starting my developer carrier which helps me to empathize client needs.
-                
-                Click below if you are looking for me.</div>
-          </div>
-
-       </div>
-
     </div>
+  </div>
+
+  <div class="footer d-flex flex-column py-3 text-center">
+    
+      <div class="footertext"> Nice to meet you</div>
+      <div class="d-flex justify-content-around p-2">
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-github-square"></i>
+          <i class="fab fa-whatsapp-square"></i>
+        </div>
+      
+        <div class="copyright text-center p-2">
+          Copyright @Liva Karlivane 2018
+        </div>
+    
+
+  </div>
+
+
+ 
+
 </body>
 </html>

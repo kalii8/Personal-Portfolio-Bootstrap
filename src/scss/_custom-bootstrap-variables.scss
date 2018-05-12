@@ -14,6 +14,7 @@
 %custom-bootstrap-variables {
     @import "./node_modules/bootstrap/scss/functions";
     @import "./node_modules/bootstrap/scss/variables";
+    @import "variables.scss";
 
     //
     // Color system
@@ -141,7 +142,6 @@
     //
     // Settings for the `<body>` element.
         
-    $bg-color: #E5DDF4;
         $body-bg:                   $bg-color !global;
     // $body-color:                $gray-900 !global;
 
@@ -361,19 +361,19 @@
     // $input-disabled-bg:                     $gray-200 !global;
 
     // $input-color:                           $gray-700 !global;
-    // $input-border-color:                    $gray-400 !global;
+     $input-border-color:                    $dark-violet !global;
     // $input-btn-border-width:                $border-width !global; // For form controls and buttons
     // $input-box-shadow:                      inset 0 1px 1px rgba($black,.075) !global;
 
-    // $input-border-radius:                   $border-radius !global;
-    // $input-border-radius-lg:                $border-radius-lg !global;
-    // $input-border-radius-sm:                $border-radius-sm !global;
+     $input-border-radius:                   0 !global;
+     $input-border-radius-lg:                0 !global;
+     $input-border-radius-sm:                0!global;
 
     // $input-focus-bg:                        $input-bg !global;
     // $input-focus-border-color:              lighten(theme-color("primary"), 25%) !global;
     // $input-focus-color:                     $input-color !global;
 
-    // $input-placeholder-color:               $gray-600 !global;
+     $input-placeholder-color:               $gray-600 !global;
 
     // $input-height-border:                   $input-btn-border-width * 2 !global;
 
@@ -615,8 +615,8 @@
 
     // Cards
 
-     $card-spacer-y:                     1rem !global;
-    $card-spacer-x:                     2rem !global;
+     $card-spacer-y:                     0.5rem !global;
+    $card-spacer-x:                     1rem !global;
     // $card-border-width:                 $border-width !global;
     // $card-border-radius:                $border-radius !global;
     // $card-border-color:                 rgba($black,.125) !global;
@@ -841,4 +841,5 @@
 
     // $pre-color:                         $gray-900 !global;
     // $pre-scrollable-max-height:         340px !global;
+    
 }
