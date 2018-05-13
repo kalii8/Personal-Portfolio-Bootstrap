@@ -11,6 +11,7 @@ body {
     }
       ul {
         width: 70%;
+        background-color: $menu-bg;
     }
     a > img {
         width: 50px;
@@ -23,6 +24,8 @@ a:hover{
 
 li:hover {
     background-color: $light-violet;
+    border: 1px solid $bg-color;
+
 }
 
 //Section headings
@@ -193,15 +196,33 @@ input[type=text], input[type=tel], input[type=email]{
 }
 
 //Footer
-.stripe {
-    width: 30%;
-    height: 20px;
-    background-color: #460e56;
-}     
 
 .footertext {
     font-size: 300%;
     text-transform: uppercase;
     color: $dark-violet;
+}
+
+.root-container {
+    border-top: 10px solid $dark-violet;
+}
+
+.root-right {
+    background-image: url("/img/tree-roots-right.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 30%;
+    background-position: right top;
+}
+
+.root-left {
+    background-image: url("/img/tree-roots-left.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 30%;
+}
+
+.icons-footer {
+    font-size: 300%;
 }
       
