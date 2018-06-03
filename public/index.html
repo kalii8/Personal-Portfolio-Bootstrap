@@ -11,13 +11,14 @@
   <title>Liva's Personal portfolio</title>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
     crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
   <!-- Navigation + logo -->
-    <nav class="navbar navbar-expand-md sticky-top my-navbar pt-0">
+    <nav class="navbar navbar-expand-md sticky-top my-navbar pt-0" id="navigation">
       <div class="container ">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand">
           <img src="img/logo.png" alt="" class="img-fluid navbar-brand">
         </a>
         <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navbarNav">
@@ -47,7 +48,7 @@
     <div class="container">
     <!-- Jumbotron + greeting texts -->
     <div class="greeting jumbotron img-responsive container text-center text-md-right font-weight-bold pr-md-5" id="home">
-        Hi, I am <span class="bigbold">Liva.</span> <br /> I'm a Full-Stack Web devopler
+        Hi, I am <span class="bigbold" id="jumbo-name">Liva.</span> <br /> I'm a Full-Stack Web devopler
         <br> with a passion for perfection.
     </div>
     <!-- Small paragraph after picture, bg color blending in-->
@@ -55,7 +56,7 @@
         I make your<span class="font-weight-bold"> dream and vision</span> into fully functional<span class="font-weight-bold"> website</span> .
     </div>
     <!-- Displaying growing roots -->
-    <div class="roots"></div>
+    <div class="roots fade"></div>
     <!--Main content, taking 10 cols -->
     <div class="row">
       <div class="col-1"></div>
@@ -65,7 +66,7 @@
           <!--Cols for process description cards, 2 breakpoints -->
           <div class="row">
             <div class="col-lg-3 col-md-6 p-1">
-              <div class="card text-justify border-0 process-card h-100">
+              <div class="card text-justify border-0 process-card h-100 fade">
                 <div class="card-body">
                   <h5 class="card-title text-center font-weight-bold">Imagine</h5>
                   <p class="card-text">Let's talk about your idea and we will decide on the best way to make it come true.</p>
@@ -73,7 +74,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-6 p-1">
-              <div class="card text-justify border-0 process-card h-100">
+              <div class="card text-justify border-0 process-card h-100 fade">
                 <div class="card-body">
                   <h5 class="card-title text-center font-weight-bold">Design</h5>
                   <p class="card-text">We desing mockup and agree together on how to create the best experience for your users.</p>
@@ -81,7 +82,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-6 p-1">
-              <div class="card text-justify border-0 process-card h-100">
+              <div class="card text-justify border-0 process-card h-100 fade">
                 <div class="card-body">
                   <h5 class="card-title text-center font-weight-bold">Deploy</h5>
                   <p class="card-text">I develop your product and we communicate intensly. Your feedback is incorporated.</p>
@@ -89,7 +90,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-6 p-1">
-              <div class="card text-justify border-0 process-card h-100">
+              <div class="card text-justify border-0 process-card h-100 fade">
                 <div class="card-body">
                   <h5 class="card-title text-center font-weight-bold">Launch</h5>
                   <p class="card-text">We deploy your product and now your website is ready to launch.</p>
@@ -104,7 +105,7 @@
           <div class="skillbarpage mx-auto">
             <div class="flex-container">
               <div class="skill">HTML</div>
-              <div class="progress">
+              <div class="progress" id="test">
                 <div class="bar HTMLbar">80%</div>
               </div>
             </div>
@@ -159,19 +160,17 @@
           <div class="row">
             <div class="col-md-4 mb-2 portfolio-card">
               <div class="card text-justify h-100 border-0 ">
-                <img class="card-img-top p-2" src="img/hero.jpg" alt="Card image cap">
+                <img class="card-img-top p-2" src="img/blackjack.png" alt="Blackjack Project">
                 <div class="card-body portfolio-card-body mx-2 mb-2">
-                  <p class="card-text">Let's talk about your idea and we will decide on the best 
-                    way to make it come true. <br /> <span class="font-weight-bold">Tech sack:</span></p>
+                  <p class="card-text">Simplified version of the BlackJack game developed as a group project during hackathon. <br /> <span class="font-weight-bold">Tech sack: CSS, HTML, JavaScript</span></p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-2 portfolio-card">
               <div class="card text-justify h-100 border-0 ">
-                <img class="card-img-top p-2" src="img/hero.jpg" alt="Card image cap">
+                <img class="card-img-top p-2" src="img/locafm.png" alt="Card image cap">
                 <div class="card-body portfolio-card-body mx-2 mb-2">
-                  <p class="card-text">We desing mockup and agree together on how to create the 
-                    best experience for your users. <br /> <span class="font-weight-bold">Tech sack:</span></p>
+                  <p class="card-text">Database of songs and artists with possibilities to edit entry, add new records and delete current ones. <br /> <span class="font-weight-bold">Tech sack: PHP, MySQL</span></p>
                 </div>
               </div>
             </div>
@@ -232,10 +231,10 @@
                         <br /> <span class="font-weight-bold">Click below if you are looking for me.</span>
                     </p>
                   
-                      <button type="button" class="btn btn-light w-50">Contact me</button>
+                      <a href="#contact"><button type="button" class="btn btn-light w-50">Contact me</button></a> 
                 </div>
               </div>
-        </div>
+        </div>        
         <!-- Find me icons -->
         <div class="findme py-3">
           <h2>Find me</h2>
@@ -245,11 +244,13 @@
               <i class="fab fa-whatsapp-square"></i>
             </div>
         </div>
+      
         <!-- Contact form -->
         <div class="contactform py-3" id="contact">
           <h2>Contact me</h2>
           <div class="row w-75 mx-auto">
             <div class="col-md-6">
+              <form action="" method="post">
               <div class="form-group ">
                 <input id="form_name" type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Please enter your firstname *" required="required"
                   data-error="Firstname is required.">
@@ -289,10 +290,11 @@
               </div>
             </div>
             <div class="col-md-12">
-              <input type="submit" class="btn btn-dark btn-send w-100" value="Send message">
+             <a href="#contact"><input type="submit" class="btn btn-dark btn-send w-100" value="Send message"></a>  
             </div>
           </div>
         </div>
+      </form>
         <div class="col-1"></div>
       </div>
     </div>
@@ -300,16 +302,16 @@
 <!-- Footer -->
   <div class="footer d-flex flex-column py-3 text-center">
     <div class="root-container d-flex justify-content-between">
-      <div class="root-left"></div>
-      <div class="footertext font-weight-bold"> Nice to meet you</div>
-      <div class="root-right "></div>
+      <div class="root-left fade"></div>
+      <div class="footertext font-weight-bold fade"> Nice to meet you</div>
+      <div class="root-right fade"></div>
     </div>
     <div class="d-flex justify-content-around p-2 icons icons-footer">
         <i class="fab fa-linkedin"></i>
         <i class="fab fa-github-square"></i>
         <i class="fab fa-whatsapp-square"></i>
     </div>
-    <div class="copyright text-center p-2 text-white-50">
+    <div class="copyright text-center p-2 text-white-50 font-weight-bold">
           Copyright @Liva Karlivane 2018
     </div>
   </div>
@@ -317,5 +319,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

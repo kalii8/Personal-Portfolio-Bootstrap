@@ -18,14 +18,10 @@ body {
     }
 }
 
-a:hover{
-    color: $root-color;
-}
-
-li:hover {
-    background-color: $light-violet;
-    border: 1px solid $bg-color;
-
+.active {
+        background-color: $light-violet;
+        border: 1px solid $bg-color;
+        color: $root-color;
 }
 
 //Section headings
@@ -63,6 +59,19 @@ h2 {
      font-size: 200%;
      font-weight: bolder; 
  }
+
+.jumbo-name {
+    background-image: linear-gradient(120deg, $light-text 0%, $dark-violet 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
+      background-size: 100% 88%;
+    }
+  }
+
+
 
  //Small paragraph after picture, bg color blending in
 .info {
@@ -114,9 +123,11 @@ h2 {
  }
  //Percentage 
   .bar {
-    background-color: $light-violet;
-    text-align: right;
-    height: 100%; }
+    background-color: $light-violet;    
+    height: 100%;
+    position: relative;
+    left: -500px;
+ }
 //bar basis
 .progress {
     background-color: $light-text;
@@ -125,6 +136,14 @@ h2 {
     border-radius:  0px 25px 25px 0;
     color: $dark-violet;
     height: 100%;
+ }
+
+ .appear {
+    display: block;
+    text-align: right;
+    transform: translateX(500px);
+    transition-delay: 2s;
+    transition: 1000ms;
  }
 
  //Percentage for each skill
